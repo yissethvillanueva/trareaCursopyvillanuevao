@@ -1,0 +1,319 @@
+
+/* Modal Pagar */
+
+.Modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.Cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.Cerrar:hover, .Cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ContenidoModal {
+    background-color: #FDEDEC;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    min-width: 550px;
+}
+
+.ModalPrincipal {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    background-color: white;
+}
+
+.ContenedorInformacion {
+    width: 80%;
+    margin: 2% auto;
+}
+
+.InputTemplate {
+    display: flex;
+    width: 100%;
+    margin: 2% auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.InputTemplate input {
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+}
+
+.InputTemplate p {
+    font-size: 20px;
+}
+
+.ButtonPay {
+    display: flex;
+    margin-top: 2%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ButtonPay button {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 35%; 
+    height: 2em;
+    background-color: rgba(85, 148, 242, 0.7);
+    border-style: none;
+    border-radius: 15px;
+    outline: none;
+    color: white;
+    font-size: 22px;
+}
+
+.ButtonPay button:hover {
+    cursor: pointer;
+    background-color: rgba(85, 148, 242, 0.85);
+}
+
+.ButtonPay button:active {
+    background-color: rgba(85, 148, 242, 1);
+    text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+}
+
+/* Modal Confirmar */
+
+.ModalConfirmar {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.CerrarConfirmar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.CerrarConfirmar:hover, .CerrarConfirmar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ContenidoModalConfirmar {
+    background-color: #FDEDEC;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    min-width: 350px;
+}
+
+.ModalPrincipalConfirmar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ModalLogoConfirmar {
+    width: 30%;
+    height: 10em;
+    margin: 2% auto 2% auto;
+    background: #FADBD8;
+    border: 10px solid #FADBD8;
+    border-radius: 50%;
+}
+
+.LineConfirmar {
+    width: 80%;
+    margin: 2% auto;
+}
+
+.InfoConfirmar {
+    font-size: 20px;
+}
+
+.ButtonConfirm {
+    display: flex;
+    margin-top: 2%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ButtonConfirm button {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 35%; 
+    height: 2em;
+    background-color: rgba(85, 148, 242, 0.7);
+    border-style: none;
+    border-radius: 15px;
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+
+.ButtonConfirm button:hover {
+    cursor: pointer;
+    background-color: rgba(85, 148, 242, 0.85);
+}
+
+.ButtonConfirm button:active {
+    background-color: rgba(85, 148, 242, 1);
+    text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+}
+
+/* Main Container */
+
+.MainContainer {
+    display: flex;
+    background-color: white;
+    font: 'Bookman Old Style';
+    min-height: 400px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.MainContainer h1 {
+    align-self: center;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.List {
+    width: 60%;
+    margin: 2% auto;
+    font-size: 18px;
+    min-width: 700px;
+}
+
+.List p{
+    margin-left: 5%;
+}
+
+.Price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 8%;
+    width: 20%;
+}
+
+.Price i {
+    cursor: pointer;
+}
+
+.Price i:hover {
+    color: #696969;
+}
+
+.Price i:active {
+    color: #818181;
+    transform: translateY(2px);
+}
+
+.GenericContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.TotalPay {
+    display: flex;
+    width: 35%;
+    margin: 2% auto;
+    background-color: #FDEDEC;
+    border-radius: 20px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 400px;
+}
+
+.TotalPay p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+hr {
+    margin: 0;
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    align-self: center;
+}
+
+.GenericContainerButton {
+    display: flex;
+    margin-top: 2%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.BtnPagarAhora {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 35%; 
+    height: 2em;
+    background-color: rgba(85, 148, 242, 0.7);
+    border-style: none;
+    border-radius: 15px;
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+
+.BtnPagarAhora:hover {
+    cursor: pointer;
+    background-color: rgba(85, 148, 242, 0.85);
+}
+
+.BtnPagarAhora:active {
+    background-color: rgba(85, 148, 242, 1);
+    text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+}

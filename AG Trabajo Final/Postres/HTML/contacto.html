@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Styles.css">
+    <link rel="stylesheet" href="../CSS/contacto_Style.css">
+
+    <title>Postres Chicholina</title>
+  </head>
+
+  <body>
+
+    <!-- Top Bar -->
+    
+    <div class="TopBar">
+      <a class="Icono" href="index.html">
+        <span id="TextoMenu">Postres Chicholina</span>
+      </a>
+
+      <a class="Config" href="../HTML/adminIndex.html">
+        <img id="ConfigImagen" src="../Images/Configuracion.png" alt="">
+      </a>
+      
+      <div id="BtnIniciar" class="IniciarSesion">
+        <span id="TextoIniciarSesion">Iniciar Sesi&oacute;n</span>
+        <img id="UsuarioImagen" src="../Images/Usuario.png" alt="">
+      </div>
+
+      <a href="../HTML/cesta.html" class="Cesta">
+        <img id="CestaImagen" src="../Images/Shopping_car.png" alt="">
+        <span id="CestaContador">0</span>
+      </a>
+    </div>
+
+    <!-- Modal -->
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="ModalMain">
+
+          <div class="InputTemplate">
+            <i class="fas fa-user-circle"></i>
+            <input class="Username" type="text" placeholder="Usuario">
+          </div>
+          
+          <div class="InputTemplate">
+            <i class="fas fa-key"></i>
+            <input class="Password" type="password" placeholder="Contrase&ntilde;a">
+          </div>
+
+          <button>Iniciar Sesi&oacute;n</button>
+
+          <hr class="LineIniciar">
+
+          <p class="PIniciar">¿No tienes cuenta?, <a class="NuevaCuenta" href="../HTML/crear_cuenta.html">Crea una gratis aqu&iacute;</a></p>
+
+        </div>
+
+      </div>
+    
+    
+    </div>
+    
+
+    <!-- Main Body -->
+
+    <div class="MainBody">
+
+      <img class="Banner" src="../Images/baner.png" alt="">
+      
+      <!-- Navegation Bar-->
+
+      <div class="NavBar">
+
+        <a class="Inicio" href="index.html">Inicio</a>
+
+        <a class="Catalogo" href="catalogo.html">Cat&aacute;logo</a>
+
+        <a class="Contacto" href="contacto.html">Contacto</a>
+
+      </div>
+
+      <!-- Main Container -->
+
+      <div class="MainContainer">
+        
+         <div class="MoreInfoContainer">
+             <img src="../Images/panadero.jpg" alt="" class="Carpenter">
+             <p class="MoreInfoHeader">M&aacute;s Informaci&oacute;n sobre nosotros</p>
+
+             <hr class="Line">
+             
+             <div class="MoreInfo">
+                <img class="Icon" src="../Images/Casa.png" alt="">
+                <p>Direcci&oacute;n: Casa Pellas<br>
+                  100vrs al Sur.</p>
+             </div>
+             <div class="MoreInfo">
+                <img class="Icon" src="../Images/Telefono.png" alt="">
+                <p><b>+(505)</b> 7560 8956 (WhatsApp Disponible)</p>
+             </div>
+             <div class="MoreInfo">
+                <img class="Icon" src="../Images/Reloj.png" alt="">
+                 <p>Lunes a Viernes: 8:00 am - 6:00 pm. <br>
+                    Sábados: 9:00 am - 4:30 pm <br>
+                    Domingos: Cerrado.</p>
+             </div>
+             <div class="MoreInfo">
+                 <img class="Icon" src="../Images/Correo.png" alt="" srcset="">
+                <p>Contacto@postreschicholina.com</p>
+             </div>
+             
+         </div>
+
+         <div class="ContactContainer">
+             <p class="ContactTitle">Cont&aacute;ctenos</p>
+             
+             <input class="Form InputTemplate" type="text" placeholder="Nombre">
+
+             <input class="Form InputTemplate" type="text" placeholder="N&uacute;mero de contacto">
+
+            <textarea class="Form InputTemplate" name="Mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+            <button class="Form ButtonIniciar">Enviar Mensaje</button>
+
+            <div id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.745042416572!2d-86.280109!3d12.129589099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7155bd1dc97217%3A0x32a0c98a459da538!2sPostres%20Chicholina!5e0!3m2!1ses-419!2sni!4v1654574262743!5m2!1ses-419!2sni" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+      
+         </div>
+
+      </div>
+      
+
+
+      <!-- Footer -->
+
+      <div class="Footer">
+
+        <div class="Info">
+
+          <a>
+            Acerca de nosotros
+          </a>
+
+          <br>
+
+          <a>
+            T&eacute;rminos y condiciones
+          </a>
+          <p id="Copy">&copy; Postres Chicholina 2020</p>
+
+        </div>
+
+        <div class="Redes">
+
+          <a id="Facebook">
+            <i class="fab fa-facebook-square"></i>
+            Facebook/PostresChicholina
+          </a>
+
+          <br>
+
+          <a id="Twitter">
+            <i class="fab fa-twitter"></i>
+            @PostresChicholina
+          </a>
+
+          <br>
+          
+          <a id="Insta">
+            <i class="fab fa-instagram"></i>
+            PostresChicholina
+          </a>
+
+        </div>
+
+        <div class="Extras">
+
+          <div>
+            <p>
+              Direcci&oacute;n: Casa Pellas <br>
+              100vrs al Sur.
+            </p>
+            <p>Tel&eacute;fono: +505 7560 8956</p>
+            <p>Correo: Contacto@postreschicholina.com</p>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+
+    <script src="../JS/Code.js"></script>
+
+  </body>
+  
+</html>

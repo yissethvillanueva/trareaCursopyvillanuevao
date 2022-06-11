@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Styles.css">
+    <link rel="stylesheet" href="../CSS/index_Style.css">
+
+    <title>Postres Chicholina</title>
+  </head>
+
+  <body>
+
+    <!-- Top Bar -->
+    
+    <div class="TopBar">
+      <a class="Icono" href="index.html">
+        <span id="TextoMenu">Postres Chicholina</span>
+      </a>
+
+      <a class="Config" href="../HTML/adminIndex.html">
+        <img id="ConfigImagen" src="../Images/Configuracion.png" alt="">
+      </a>
+      
+      <div id="BtnIniciar" class="IniciarSesion">
+        <span id="TextoIniciarSesion">Iniciar Sesi&oacute;n</span>
+        <img id="UsuarioImagen" src="../Images/Usuario.png" alt="">
+      </div>
+
+      <a href="../HTML/cesta.html" class="Cesta">
+        <img id="CestaImagen" src="../Images/Shopping_car.png" alt="">
+        <span id="CestaContador">0</span>
+      </a>
+    </div>
+
+    <!-- Modal -->
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="ModalMain">
+
+          <div class="InputTemplate">
+            <i class="fas fa-user-circle"></i>
+            <input class="Username" type="text" placeholder="Usuario">
+          </div>
+          
+          <div class="InputTemplate">
+            <i class="fas fa-key"></i>
+            <input class="Password" type="password" placeholder="Contrase&ntilde;a">
+          </div>
+
+          <button>Iniciar Sesi&oacute;n</button>
+
+          <hr class="LineIniciar">
+
+          <p class="PIniciar">¿No tienes cuenta?, <a class="NuevaCuenta" href="../HTML/crear_cuenta.html">Crea una gratis aqu&iacute;</a></p>
+
+        </div>
+      </div>
+    
+    </div>
+
+    <!-- Main Body -->
+
+    <div class="MainBody">
+
+      <img class="Banner" src="../Images/baner.png" alt="">
+      
+      <!-- Navegation Bar-->
+
+      <div class="NavBar">
+
+        <a class="Inicio" href="index.html">Inicio</a>
+
+        <a class="Catalogo" href="catalogo.html">Cat&aacute;logo</a>
+
+        <a class="Contacto" href="contacto.html">Contacto</a>
+
+      </div>
+
+      <!-- Main Container -->
+
+      <div class="MainContainer">
+        
+        <div class="MainInfo">
+          <video class="InfoImage" controls>
+                   <source src="../Images/videoPastel.mp4" type="video/mp4">
+                   
+          </video>
+          <p>
+            Somos una empresa dedica a la elaboración de productos de
+            pastelería comprometidos con nuestros clientes en brindarles productos de 
+            gran calidad y sabor con un servicio amable y oportuno.  
+          </p>
+        </div>
+
+        <div class="MainInfo">
+          <p>
+            Aproveche los descuentos que realizamos a lo largo del a&ntilde;o, 
+            donde podr&aacute; adquirir postres de calidad a precios incre&iacute;bles 
+            que no encontrar&aacute; en ning&uacute;n otro sitio. Estaremos encantados de atenderles.
+          </p>
+          <img class="InfoImage" src="../Images/desc.jpg" alt="">
+        </div>
+
+        
+        <div class="MainInfo">
+          <img class="InfoImage" src="../Images/atencion-al-cliente.jpg" alt="">
+          <p>
+            Tenemos disponible envios por delivery,con la finalidad de 
+            llevar a cualquier lugar nuestros deliciosos productos,
+            no dude en contactarnos, ser&aacute; un honor
+            para nosotros el poder trabajar con usted.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- Footer -->
+
+      <div class="Footer">
+
+        <div class="Info">
+
+          <a>
+            Acerca de nosotros
+          </a>
+
+          <br>
+
+          <a>
+            T&eacute;rminos y condiciones
+          </a>
+          <p id="Copy">&copy; Postres Chicholina 2020</p>
+
+        </div>
+
+        <div class="Redes">
+
+          <a id="Facebook">
+            <i class="fab fa-facebook-square"></i>
+            Facebook/PostresChicholina
+          </a>
+
+          <br>
+
+          <a id="Twitter">
+            <i class="fab fa-twitter"></i>
+            @PostresChicholina
+          </a>
+
+          <br>
+          
+          <a id="Insta">
+            <i class="fab fa-instagram"></i>
+            PostresChicholina
+          </a>
+
+        </div>
+
+        <div class="Extras">
+
+          <div>
+            <p>
+              Direcci&oacute;n: Casa Pellas <br>
+              100vrs al Sur.
+            </p>
+            <p>Tel&eacute;fono: +505 7560 8956</p>
+            <p>Correo: Contacto@postreschicholina.com</p>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+
+    <script src="../JS/Code.js"></script>
+
+  </body>
+  
+</html>

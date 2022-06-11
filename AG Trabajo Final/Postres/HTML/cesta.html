@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="../CSS/Styles.css">
+  <link rel="stylesheet" href="../CSS/cesta_Style.css">
+
+  <title>Postres Chicholina</title>
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+
+  <div class="TopBar">
+    <a class="Icono" href="index.html">
+      <span id="TextoMenu">Postres Chicholina</span>
+    </a>
+
+    <a class="Config" href="../HTML/adminIndex.html">
+      <img id="ConfigImagen" src="../Images/Configuracion.png" alt="">
+    </a>
+
+    <div id="BtnIniciar" class="IniciarSesion">
+      <span id="TextoIniciarSesion">Iniciar Sesi&oacute;n</span>
+      <img id="UsuarioImagen" src="../Images/Usuario.png" alt="">
+    </div>
+
+    <a href="../HTML/cesta.html" class="Cesta">
+      <img id="CestaImagen" src="../Images/Shopping_car.png" alt="">
+      <span id="CestaContador">0</span>
+    </a>
+  </div>
+
+  <!-- Modal Pagar -->
+
+  <div id="ModalGeneral" class="Modal">
+
+    <!-- Modal content -->
+    <div class="ContenidoModal">
+      <span class="Cerrar">&times;</span>
+      <div class="ModalPrincipal">
+
+        <div class="ContenedorInformacion">
+
+          <div class="InputTemplate">
+            <p>N&uacute;mero de Tarjeta</p>
+            <input type="text" placeholder="XXXX - XXXX - XXXX - XXXX">
+          </div>
+
+          <div class="InputTemplate">
+            <p>CVV</p>
+            <input type="text" placeholder="XXX">
+          </div>
+
+          <div class="InputTemplate">
+            <p>Fecha de Expiraci&oacute;n</p>
+            <input type="text" placeholder="MM / YY">
+          </div>
+
+          <div class="InputTemplate">
+            <p>Nombre de Factura</p>
+            <input type="text" placeholder="Nombre de la Persona">
+          </div>
+
+          <div class="InputTemplate">
+            <p>Direcci&oacute;n</p>
+            <textarea cols="30" rows="5"></textarea>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="ButtonPay">
+        <button id="BtnEfectuar">Efectuar Pago</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Modal Confirmación -->
+
+  <div id="ModalGeneralConfirmar" class="ModalConfirmar">
+
+    <!-- Modal content -->
+    <div class="ContenidoModalConfirmar">
+      <span class="CerrarConfirmar">&times;</span>
+      <div class="ModalPrincipalConfirmar">
+
+        <hr class="LineConfirmar">
+
+        <div class="InfoConfirmar">
+          <p>Le llegar&aacute; su factura al correo</p>
+          <p><b>NombreUsuario@gmail.com</b></p>
+        </div>
+
+      </div>
+
+      <div class="ButtonConfirm">
+        <button id="BtnAccept">Entendido</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Main Body -->
+
+  <div class="MainBody">
+
+    <img class="Banner" src="../Images/baner.png" alt="">
+
+    <!-- Navegation Bar-->
+
+    <div class="NavBar">
+
+      <a class="Inicio" href="index.html">Inicio</a>
+
+      <a class="Catalogo" href="catalogo.html">Cat&aacute;logo</a>
+
+      <a class="Contacto" href="contacto.html">Contacto</a>
+
+    </div>
+
+    <!-- Main Container -->
+
+    <div class="MainContainer">
+      
+      <h1 class="">Lista de art&iacute;culos en la cesta</h1>
+      <hr>
+      
+      <div class="List">
+        <ul>
+          <li>
+            <p class="ProductName">Pastel de Fresas</p>
+            <p>--------------------------------------</p>
+            <div class="Price">
+              <p>$ 27</p>
+              <i class="fas fa-trash"></i>
+            </div>
+          </li>
+          <li>
+            <p class="ProductName">Tarta de Naranja</p>
+            <p>--------------------------------------</p>
+            <div class="Price">
+              <p>$ 20</p>
+              <i class="fas fa-trash"></i>
+            </div>
+          </li>
+         
+        </ul>
+      </div>
+
+      <div class="TotalPay">
+        <div class="GenericContainer">
+          <p>Subtotal</p>
+          <p>$ 47</p>
+        </div>
+        <div class="GenericContainer">
+          <p>IVA</p>
+          <p>$ 2</p>
+        </div>
+        <div class="GenericContainer">
+          <p>Gasto de env&iacute;o</p>
+          <p>$ 5</p>
+        </div>
+        <div class="GenericContainer">
+          <p>Total</p>
+          <p>$ 54</p>
+        </div>
+
+        <div class="GenericContainerButton">
+          <button id="BtnPagar" class="BtnPagarAhora">Pagar Ahora</button>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="Footer">
+
+      <div class="Info">
+
+        <a>
+          Acerca de nosotros
+        </a>
+
+        <br>
+
+        <a>
+          T&eacute;rminos y condiciones
+        </a>
+        <p id="Copy">&copy; Postres Chicholina 2020</p>
+
+      </div>
+
+      <div class="Redes">
+
+        <a id="Facebook">
+          <i class="fab fa-facebook-square"></i>
+          Facebook/PostresChicholina
+        </a>
+
+        <br>
+
+        <a id="Twitter">
+          <i class="fab fa-twitter"></i>
+          @PostresChicholina
+        </a>
+
+        <br>
+
+        <a id="Insta">
+          <i class="fab fa-instagram"></i>
+          PostresChicholina
+        </a>
+
+      </div>
+
+      <div class="Extras">
+
+        <div>
+          <p>
+            Direcci&oacute;n: Casa Pellas <br>
+              100vrs al Sur.
+          </p>
+          <p>Tel&eacute;fono: +505 7560 8956</p>
+          <p>Correo: Contacto@postreschicholina.com</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="../JS/Code.js"></script>
+  <script src="../JS/cesta_Code.js"></script>
+
+</body>
+
+</html>

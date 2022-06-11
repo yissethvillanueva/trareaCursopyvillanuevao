@@ -1,0 +1,30 @@
+.Inicio {
+    background-color: #707070;
+}
+
+/* Main Container */
+
+.MainContainer {
+    display: flex;
+    background-color: white;
+    font: 'Bookman Old Style';
+    min-height: 400px;
+    flex-direction: column;
+}
+
+.MainInfo {
+    display: flex;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 50px auto;
+}
+
+.InfoImage {
+    width: 350px;
+    height: 200px;
+    margin: 0 20px;
+    border-radius: 25px;
+}

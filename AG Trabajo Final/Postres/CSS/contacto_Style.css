@@ -1,0 +1,105 @@
+.Contacto {
+    background-color: #707070;
+}
+
+/* Main Container */
+
+.MainContainer {
+    display: flex;
+    background-color: white;
+    font: 'Bookman Old Style';
+    min-height: 400px;
+    justify-content: space-between;
+}
+
+.MoreInfoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Line {
+    margin: 0;
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.Carpenter {
+    width: 25em;
+    height: 20em;
+    border-radius: 10px;
+}
+
+.MoreInfoHeader {
+    font-size: 22px;
+    margin: 20px 0 8px 10px;
+}
+
+.MoreInfo {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+}
+
+.Icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.ContactContainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    align-items: center;
+}
+
+.ContactTitle {
+    text-align: center;
+    font-size: 45px;
+}
+
+.Form {
+    width: 100%;
+    font-size: 20px;
+}
+
+.InputTemplate {
+    margin: 10px 0 10px 0;
+}
+
+.ButtonIniciar {
+    margin-top: 15px;
+    width: 80%; 
+    height: 2em;
+    background-color: rgba(85, 148, 242, 0.7);
+    border-style: none;
+    border-radius: 15px;
+    outline: none;
+    color: white;
+}
+
+.ButtonIniciar:hover {
+    cursor: pointer;
+    background-color: rgba(85, 148, 242, 0.85);
+}
+
+.ButtonIniciar:active {
+    background-color: rgba(85, 148, 242, 1);
+    text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+}
+
+#map{
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    margin-left: -220px;
+    
+
+}

@@ -1,0 +1,166 @@
+.TopBar {
+    justify-content: start !important; 
+}
+
+/* Modal */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: #FDEDEC;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+    min-width: 700px;
+}
+
+.ModalMain {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.InfoContainer {
+    text-align: center;
+    width: 90%;
+}
+
+.ButtonTerms {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ButtonTerms button {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    width: 35%; 
+    height: 2em;
+    background-color: rgba(85, 148, 242, 0.7);
+    border-style: none;
+    border-radius: 15px;
+    outline: none;
+    color: white;
+}
+
+.ButtonTerms button:hover {
+    cursor: pointer;
+    background-color: rgba(85, 148, 242, 0.85);
+}
+
+.ButtonTerms button:active {
+    background-color: rgba(85, 148, 242, 1);
+    text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+}
+
+/* Main Container */
+
+.MainContainer {
+    display: flex;
+    background-color: white;
+    font: 'Bookman Old Style';
+    min-height: 400px;
+    flex-direction: column;
+}
+
+.GenericContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Especial {
+    margin-top: 3%;
+}
+
+.Form {
+    justify-content: space-between;
+    width: 40%;
+    margin:  5% auto;
+}
+
+.GenericContainer input {
+    width: 60%;
+    height: 2.5em;
+}
+
+.GenericContainer img {
+    width: 55%;
+    margin-right: 6.7%;
+}
+
+.Terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Terms p{
+    margin-left: 2%;
+}
+
+.TermsLink {
+    color: red;
+    cursor: pointer;
+}
+
+.ButtonContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ButtonContainer button {
+    margin-top: 15px;
+    width: 50%; 
+    height: 2em;
+    background-color: rgba(85, 148, 242, 0.7);
+    border-style: none;
+    border-radius: 15px;
+    outline: none;
+    color: white;
+    font-size: 20px;
+}
+
+.ButtonContainer button:hover {
+    cursor: pointer;
+    background-color: rgba(85, 148, 242, 0.85);
+}
+
+.ButtonContainer button:active {
+    background-color: rgba(85, 148, 242, 1);
+    text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+}

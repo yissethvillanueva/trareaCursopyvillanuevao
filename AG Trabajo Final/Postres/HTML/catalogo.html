@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Styles.css">
+    <link rel="stylesheet" href="../CSS/catalogo_Style.css">
+
+    <title>Postres Chicholina</title>
+  </head>
+
+  <body>
+
+    <!-- Top Bar -->
+    
+    <div class="TopBar">
+      <a class="Icono" href="index.html">
+        <span id="TextoMenu">Postres Chicholina</span>
+      </a>
+
+      <a class="Config" href="../HTML/adminIndex.html">
+        <img id="ConfigImagen" src="../Images/Configuracion.png" alt="">
+      </a>
+      
+      <div id="BtnIniciar" class="IniciarSesion">
+        <span id="TextoIniciarSesion">Iniciar Sesi&oacute;n</span>
+        <img id="UsuarioImagen" src="../Images/Usuario.png" alt="">
+      </div>
+
+      <a href="../HTML/cesta.html" class="Cesta">
+        <img id="CestaImagen" src="../Images/Shopping_car.png" alt="">
+        <span id="CestaContador">0</span>
+      </a>
+    </div>
+
+    <!-- Modal -->
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="ModalMain">
+
+          <div class="InputTemplate">
+            <i class="fas fa-user-circle"></i>
+            <input class="Username" type="text" placeholder="Usuario">
+          </div>
+          
+          <div class="InputTemplate">
+            <i class="fas fa-key"></i>
+            <input class="Password" type="password" placeholder="Contrase&ntilde;a">
+          </div>
+
+          <button>Iniciar Sesi&oacute;n</button>
+
+          <hr class="LineIniciar">
+
+          <p class="PIniciar">¿No tienes cuenta?, <a class="NuevaCuenta" href="../HTML/crear_cuenta.html">Crea una gratis aqu&iacute;</a></p>
+
+        </div>
+      </div>
+    
+    </div>
+
+    <!-- Main Body -->
+
+    <div class="MainBody">
+
+      <img class="Banner" src="../Images/baner.png" alt="">
+      
+      <!-- Navegation Bar-->
+
+      <div class="NavBar">
+
+        <a class="Inicio" href="index.html">Inicio</a>
+
+        <a class="Catalogo" href="catalogo.html">Cat&aacute;logo</a>
+
+        <a class="Contacto" href="contacto.html">Contacto</a>
+
+      </div>
+
+      <!-- Main Container -->
+
+      <div class="MainContainer">
+        
+        <div class="OptionContainer">
+            
+            <div class="CategorySearch">
+
+                <div class="Categories">
+                    <button onclick="Dropdown()" class="BtnCat">
+                        <i class="fas fa-bars"></i>
+                        Categorias
+                    </button>
+                    <div id="Desplegable" class="Contenido">
+                      <a href="">Tortas</a>
+                      <a href="">Tartas</a>
+                      <a href="">Cheesecake</a>
+                    </div>
+                  </div>
+
+                <div class="SearchContainer">
+                    <input type="text" placeholder="Search.." id="Search" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+
+            </div>
+            <br>
+
+        </div>
+
+        <hr>
+        <br>
+        <div class="ProductsContainer">
+
+            <div class="Product">
+                <div class="overlay">
+                    <div class="text">
+                        Pastel con baño de fresas.
+                    </div>
+                </div>
+                <img class="ProductImage" src="../Images/Catalogo_Imagenes/pastelFres1.png" alt="">
+                <p class="ProductName">Pastel de Fresas</p>
+                <p class="ProductPrice">$ 27</p>
+                <button>A&ntilde;adir al carrito</button>
+            </div>
+
+            <div class="Product">
+                <div class="overlay">
+                    <div class="text">
+                        Pastel con baño de frutas variadas.
+                    </div>
+                </div>
+                <img class="ProductImage" src="../Images/Catalogo_Imagenes/pastelFrutas.png" alt="">
+                <p class="ProductName">Pastel de Frutas</p>
+                <p class="ProductPrice">$ 22</p>
+                <button>A&ntilde;adir al carrito</button>
+            </div>
+
+            <div class="Product">
+                <div class="overlay">
+                    <div class="text">
+                        Pastel con bajo de frutos rojos.
+                    </div>
+                </div>
+                <img class="ProductImage" src="../Images/Catalogo_Imagenes/pastelFrutosrojos.png" alt="">
+                <p class="ProductName">Pastel de Frutos Rojos</p>
+                <p class="ProductPrice">$ 20</p>
+                <button>A&ntilde;adir al carrito</button>
+            </div>
+
+        </div>
+
+        <div class="ProductsContainer">
+
+            <div class="Product">
+                <div class="overlay">
+                    <div class="text">
+                        Tarta con baño de calala 
+                    </div>
+                </div>
+                <img class="ProductImage" src="../Images/Catalogo_Imagenes/tartaCalala.png" alt="">
+                <p class="ProductName">Tarta de calala</p>
+                <p class="ProductPrice">$ 25</p>
+                <button>A&ntilde;adir al carrito</button>
+            </div>
+
+            <div class="Product">
+                <div class="overlay">
+                    <div class="text">
+                        Tarta con baño de naranja
+                    </div>
+                </div>
+                <img class="ProductImage" src="../Images/Catalogo_Imagenes/tartaNaranja.png" alt="">
+                <p class="ProductName">Tarta de Naranja</p>
+                <p class="ProductPrice">$ 20</p>
+                <button>A&ntilde;adir al carrito</button>
+            </div>
+          
+            <div class="Product">
+              <div class="overlay">
+                  <div class="text">
+                      Tarta con baño de limon 
+                  </div>
+              </div>
+              <img class="ProductImage" src="../Images/Catalogo_Imagenes/tartaLimon.png" alt="">
+              <p class="ProductName">Tarta de Limon</p>
+              <p class="ProductPrice">$ 20</p>
+              <button>A&ntilde;adir al carrito</button>
+          </div>  
+
+        </div>
+
+      </div>
+
+
+      <!-- Footer -->
+
+      <div class="Footer">
+
+        <div class="Info">
+
+          <a>
+            Acerca de nosotros
+          </a>
+
+          <br>
+
+          <a>
+            T&eacute;rminos y condiciones
+          </a>
+          <p id="Copy">&copy; Postres Chicholina 2020</p>
+
+        </div>
+
+        <div class="Redes">
+
+          <a id="Facebook">
+            <i class="fab fa-facebook-square"></i>
+            Facebook/PostresChicholina
+          </a>
+
+          <br>
+
+          <a id="Twitter">
+            <i class="fab fa-twitter"></i>
+            @PostresChicholina
+          </a>
+
+          <br>
+          
+          <a id="Insta">
+            <i class="fab fa-instagram"></i>
+            PostresChicholina
+          </a>
+
+        </div>
+
+        <div class="Extras">
+
+          <div>
+            <p>
+              Direcci&oacute;n: Casa Pellas <br>
+              100vrs al Sur.
+            </p>
+            <p>Tel&eacute;fono: +505 7560 8956</p>
+            <p>Correo: Contacto@postreschicholina.com</p>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+
+    <script src="../JS/Code.js"></script>
+    <script src="../JS/catalogo_Code.js"></script>
+
+  </body>
+  
+</html>

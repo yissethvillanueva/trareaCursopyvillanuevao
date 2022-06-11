@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/adminIndex_Style.css">
+
+    <title>Administraci&oacute;n Postres Chicholina</title>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+
+    <div class="TopBar">
+        <a class="Icono" href="index.html">
+            <span id="TextoMenu">Postres Chicholina</span>
+        </a>
+
+        <div class="IniciarSesion">
+            <span id="TextoIniciarSesion">Admin Paola</span>
+            <img id="UsuarioImagen" src="../Images/Usuario.png" alt="">
+        </div>
+    </div>
+
+    <!-- Modal Mensaje -->
+
+    <div id="ModalGeneralMensaje" class="ModalMensaje">
+
+        <!-- Modal content -->
+        <div class="ContenidoModalMensaje">
+            <span class="CerrarMensaje">&times;</span>
+            <div class="ModalPrincipalMensaje">
+
+                <p id="Encabezado">Mensaje del Usuario: Laurent Cruz</p>
+
+                <textarea disabled id="MensajeRecibido" cols="60"
+                    rows="5">Estoy interesado en comprar varios pasteles para una fiesta. Me gustar&iacute;a saber si puedo personalizar dise&ntilde;os para poder mandarle algunos.</textarea>
+
+                <p id="Encabezado">Responder Mensaje:</p>
+
+                <textarea id="Respuesta" cols="60" rows="5"></textarea>
+
+            </div>
+
+            <div class="ButtonConfirm">
+                <button id="BtnAccept">Enviar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Main Container -->
+
+    <div class="MainContainer">
+
+        <!--Lateral Bar-->
+        <div class="AsideBar">
+            <div class="GeneralAsideBar">
+                <div class="TopBarPanel">
+                    Panel de Control
+                </div>
+                <div id="BtnResumen" class="GenericContainer">
+                    <i class="far fa-folder"></i>
+                    <p>Resumen</p>
+                </div>
+                <div id="BtnUsers" class="GenericContainer">
+                    <i class="fas fa-users"></i>
+                    <p>Usuarios</p>
+                </div>
+                <div id="BtnOrders" class="GenericContainer">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>Ordenes</p>
+                </div>
+                <div id="BtnMessages" class="GenericContainer">
+                    <i class="fas fa-envelope"></i>
+                    <p>Mensajes</p>
+                </div>
+            </div>
+
+            <div class="PagesAsideBar">
+                <div class="TopBarPanel">
+                    Editar Contenido
+                </div>
+                <div id="BtnInicio" class="GenericContainer">
+                    <i class="fas fa-home"></i>
+                    <p>Inicio</p>
+                </div>
+                <div id="BtnCatalogo" class="GenericContainer">
+                    <i class="fas fa-book"></i>
+                    <p>Cat&aacute;logo</p>
+                </div>
+               
+            </div>
+        </div>
+
+
+        <!-- Main Content-->
+        <div class="MainContent">
+
+            <!-- Quick View-->
+
+            <div id="QuickViewDiv" class="QuickView">
+                <div class="TopBarContent"> General </div>
+                <div class="QVContainer">
+
+                    <div class="OtherGenericContainer">
+                        <div class="Data">
+                            <i class="fas fa-users"></i>
+                            <span>5</span>
+                        </div>
+                        <p>Usuarios</p>
+                    </div>
+
+                    <div class="OtherGenericContainer">
+                        <div class="Data">
+                            <i class="fas fa-shopping-basket"></i>
+                            <span>3</span>
+                        </div>
+                        <p>&Oacute;rden(es)</p>
+                    </div>
+
+                    <div class="OtherGenericContainer">
+                        <div class="Data">
+                            <i class="fas fa-envelope"></i>
+                            <span>1</span>
+                        </div>
+                        <p>Mensaje(s)</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Last Users-->
+
+            <div id="LastUsersDiv" class="LastUsers">
+                <div class="TopBarContent">&Uacute;ltimos Usuarios</div>
+                <div class="Table">
+                    <table cellspacing="0">
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Correo</th>
+                            <th>Fecha de creaci&oacute;n</th>
+                        </tr>
+                        <tr>
+                            <th>Paola Villanueva</th>
+                            <th>paolavillanueva@gmail.com</th>
+                            <th>23/05/2022</th>
+                        </tr>
+                        <tr>
+                            <th>Miurel </th>
+                            <th>miurel01@gmail.com</th>
+                            <th>15/04/2022</th>
+                        </tr>
+                        <tr>
+                            <th>Uriel</th>
+                            <th>uriel12@gmail.com</th>
+                            <th>30/05/2022</th>
+                        </tr>
+                        <tr>
+                            <th>Laurent Cruz</th>
+                            <th>laurentcruz@gmail.com</th>
+                            <th>08/05/2022</th>
+                        </tr>
+                        <tr>
+                            <th>Ariana Prado</th>
+                            <th>arianaprado@gmail.com</th>
+                            <th>09/06/2022</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!--All Users-->
+
+            <div id="UsersDiv" class="Users">
+                <div class="TopBarContent">Usuarios Existentes</div>
+                <div class="SearchContainer">
+                    <input type="text" placeholder="B&uacute;squeda.." id="Search" name="search">
+                    <p>Ordenar por:</p>
+                    <select name="Ordenados">
+                        <option value="User">Usuario</option>
+                        <option value="Email">Email</option>
+                    </select>
+                </div>
+                <div class="Table">
+                    <table cellspacing="0">
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Correo</th>
+                            <th>Fecha de creaci&oacute;n</th>
+                        </tr>
+                        <tr>
+                            <th>Paola Villanueva</th>
+                            <th>paolavillanueva@gmail.com</th>
+                            <th>23/05/2022</th>
+                        </tr>
+                        <tr>
+                            <th>Miurel </th>
+                            <th>miurel01@gmail.com</th>
+                            <th>15/04/2022</th>
+                        </tr>
+                        <tr>
+                            <th>Uriel</th>
+                            <th>uriel12@gmail.com</th>
+                            <th>30/05/2022</th>
+                        </tr>
+                        <tr>
+                            <th>Laurent Cruz</th>
+                            <th>laurentcruz@gmail.com</th>
+                            <th>08/05/2022</th>
+                        </tr>
+                        <tr>
+                            <th>Ariana Prado</th>
+                            <th>arianaprado@gmail.com</th>
+                            <th>09/06/2022</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!--Orders-->
+
+            <div id="COrderDiv" class="Order">
+                <div class="TopBarContent">Ordenes completadas</div>
+                <div class="Table">
+                    <table cellspacing="0">
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Numero de orden</th>
+                            <th>Fecha de entrega del pedido</th>
+                            <th>Cantidad de articulos</th>
+                        </tr>
+                        <tr>
+                            <th>Laurent Cruz</th>
+                            <th>0001</th>
+                            <th>08/05/2022</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>Ariana Prado</th>
+                            <th>0002</th>
+                            <th>09/06/2022</th>
+                            <th>1</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div id="NewOrderDiv" class="Order">
+                <div class="TopBarContent">Ordenes pendientes</div>
+                <div class="Table">
+                    <table cellspacing="0">
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Numero de orden</th>
+                            <th>Cantidad de articulos</th>
+                            <th>Fecha de realizaci&oacute;n de pedido</th>
+                            <th>Fecha de entrega del pedido</th>
+                        </tr>
+                        <tr>
+                            <th>Paola Villanueva</th>
+                            <th>0003</th>
+                            <th>4</th>
+                            <th>25/06/2020</th>
+                            <th>16/07/2020</th>
+                        </tr>
+                        <tr>
+                            <th>Ariana Prado</th>
+                            <th>0005</th>
+                            <th>2</th>
+                            <th>06/07/2020</th>
+                            <th>14/07/2020</th>
+                        </tr>
+                        <tr>
+                            <th>Laurent Cruz</th>
+                            <th>0006</th>
+                            <th>3</th>
+                            <th>07/07/2020</th>
+                            <th>21/07/2020</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Messages -->
+
+            <div id="MessagesDiv" class="Messages">
+                <div class="TopBarContent">Ordenes pendientes</div>
+                <div class="Table">
+                    <table cellspacing="0">
+                        <tr>
+                            <th>No.</th>
+                            <th>Usuario</th>
+                            <th>Fecha del mensaje</th>
+                            <th>Opciones</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Laurent Cruz</th>
+                            <th>4/07/2020</th>
+                            <th>
+                                <div>
+                                    <button id="Contestar">Contestar</button>
+                                    <button id="Eliminar" onclick="remove(this)">Eliminar</button>
+                                </div>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Principal -->
+
+            <div id="HomeDiv" class="AddPrincipal">
+                <div class="TopBarContent">Agregar contenido: Inicio</div>
+                <div>
+                    <div class="FileContainer">
+                        <p>Imagen</p>
+                        <form action="/action_page.php">
+                            <input type="file" id="myFile" name="filename">
+                        </form>
+                    </div>
+                    <div class="FileContainer">
+                        <p>Contenido</p>
+                        <textarea cols="43" rows="6"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div id="HomeDeleteDiv" class="DeletePrincipal">
+                <div class="TopBarContent">Eliminar contenido: Inicio</div>
+                <div class="MiniContent">
+                    <div class="MiniMainInfo">
+                        <img src="../Images/calidad.jpg" class="MiniImage">
+                        <br>
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    <div class="MiniMainInfo">
+                        <img src="../Images/desc.jpg" class="MiniImage">
+                        <br>
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    <div class="MiniMainInfo">
+                        <img src="../Images/atencion-al-cliente.jpg" class="MiniImage">
+                        <br>
+                        <i class="fas fa-trash"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Catalogo -->
+
+            <div id="AddCatalogDiv" class="Catalog">
+                <div class="TopBarContent">Agregar contenido: Cat&aacute;logo</div>
+                <div>
+                    <div class="FileContainer">
+                        <p>Imagen</p>
+                        <form action="/action_page.php">
+                            <input type="file" id="myFile" name="filename">
+                        </form>
+                    </div>
+                    <div class="FileContainer">
+                        <p>Nombre</p>
+                        <input type="text">
+                    </div>
+                    <div class="FileContainer">
+                        <p>Precio</p>
+                        <input type="text">
+                    </div>
+                    <div class="FileContainer">
+                        <p>Descripcion</p>
+                        <textarea cols="45" rows="6"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div id="DeleteCatalogDiv" class="Catalog">
+                <div class="TopBarContent">Eliminar Contenido: Cat&aacute;logo</div>
+                <div class="Table">
+                    <table cellspacing="0">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Eliminar</th>
+                        </tr>
+                        <tr>
+                            <th>Pastel de Fresas</th>
+                            <th>$ 27</th>
+                            <th><i class="fas fa-trash" onclick="removeCatalog(this)"></i></th>
+                        </tr>
+                        <tr>
+                            <th>Pastel de Frutas</th>
+                            <th>$ 22</th>
+                            <th><i class="fas fa-trash" onclick="removeCatalog(this)"></i></th>
+                        </tr>
+                        <tr>
+                            <th>Pastel de Frutos Rojos</th>
+                            <th>$ 20</th>
+                            <th><i class="fas fa-trash" onclick="removeCatalog(this)"></i></th>
+                        </tr>
+                        <tr>
+                            <th>Tarta de Naranja</th>
+                            <th>$ 20</th>
+                            <th><i class="fas fa-trash" onclick="removeCatalog(this)"></i></th>
+                        </tr>
+                        <tr>
+                            <th>Tarta de Limon</th>
+                            <th>$ 20</th>
+                            <th><i class="fas fa-trash" onclick="removeCatalog(this)"></i></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+          
+
+            
+            
+
+        </div>
+    </div>
+
+    <script src="../JS/adminIndex_Code.js"></script>
+
+</body>
+
+</html>

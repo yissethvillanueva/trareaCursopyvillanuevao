@@ -1,0 +1,348 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DEDEDE;  
+}
+
+/* Modal */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: #FDEDEC;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    min-width: 350px;
+}
+
+.ModalMain {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ModalLogo {
+    width: 30%;
+    height: 10em;
+    margin: 2% auto 5% auto;
+    background: #FADBD8;
+    border: 10px solid #FADBD8;
+    border-radius: 50%;
+}
+
+.InputTemplate {
+    display: flex;
+    margin: 3% auto;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Username {
+    margin-left: 5%;
+    font-size: 20px;
+    width: 70%;
+}
+
+.Password {
+    margin-left: 5%;
+    font-size: 20px;
+    width: 70%;
+}
+
+.modal-content button {
+    margin-top: 5%;
+    width: 50%; 
+    height: 2em;
+    background-color: rgba(85, 148, 242, 0.7);
+    border-style: none;
+    border-radius: 15px;
+    outline: none;
+    color: white;
+    font-size: 20px;
+}
+
+.modal-content button:hover {
+    cursor: pointer;
+    background-color: rgba(85, 148, 242, 0.85);
+}
+
+.modal-content button:active {
+    background-color: rgba(85, 148, 242, 1);
+    text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+}
+
+.LineIniciar {
+    width: 80%;
+    margin: 5% auto;
+}
+
+.PIniciar {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/* Top Bar */
+
+.TopBar {
+    display: flex;
+    background-color: #FDEDEC;
+    justify-content: center;
+    align-items: center;
+    font: 'Bookman Old Style';
+    font-size: 18px;
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+} 
+
+.Icono {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.Icono:hover {
+    cursor: pointer;
+}
+
+#LogoMenu {
+    margin-right: 8px;
+    width: 35px;
+    height: 45px;
+}
+
+/*
+#TextoMenu { 
+}
+*/
+
+.Config {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+#ConfigImagen {
+    width: 35px;
+    height: 35px;
+}
+
+.IniciarSesion {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.IniciarSesion:hover {
+    cursor: pointer;
+}
+
+/*
+#TextoIniciarSesion {
+}
+*/
+
+#UsuarioImagen {
+    margin-left: 8px;
+    width: 30px;
+    height: 30px;
+}
+
+.Cesta {
+    margin-right: 30px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.Cesta:hover {
+    cursor: pointer;
+}
+
+#CestaImagen {
+    width: 30px;
+    height: 30px;
+}
+
+/*
+#CestaContador {
+}
+*/
+
+/* MainBody */
+
+.MainBody {
+    min-width: 900px;
+    width: 68.75%;
+    margin: auto;
+}
+
+/* Banner */
+
+.Banner {
+    width: 100%;
+}
+
+/* NavBar */
+
+.NavBar {
+    display: flex;
+    font: 'Bookman Old Style';
+    font-size: 35px;    
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: gray;
+    color: white;
+    height: 75px;
+}
+
+.Inicio {
+    width: 25%;
+    height: 75px;
+    border-right: #DEDEDE 1px solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
+
+.Inicio:hover {
+    cursor: pointer;
+    background-color: #6d64f1;
+}
+
+.Catalogo {
+    width: 25%;
+    height: 75px;
+    border-left: #DEDEDE 1px solid;
+    border-right: #DEDEDE 1px solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
+
+.Catalogo:hover {
+    cursor: pointer;
+    background-color: #6d64f1;
+}
+
+.Galeria {
+    width: 25%;
+    height: 75px;
+    border-left: #DEDEDE 1px solid;
+    border-right: #DEDEDE 1px solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
+
+.Galeria:hover {
+    cursor: pointer;
+    background-color: #707070;
+}
+
+
+.Contacto {
+    width: 25%;
+    height: 75px;
+    border-left: #DEDEDE 1px solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
+
+.Contacto:hover {
+    cursor: pointer;
+    background-color:#6d64f1;
+}
+
+/* Footer */
+
+.Footer {
+    background-color: #FADBD8;
+    border: #FDEDEC 1px solid;
+    font: 'Bookman Old Style';
+    font-size: 14px;
+    min-height: 8px;
+    height: 9%;
+    max-height: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+
+}
+
+.Extras {
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+}
+
+#Copy {
+    text-align: left;
+}
+
